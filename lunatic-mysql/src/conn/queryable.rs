@@ -105,6 +105,7 @@ pub trait Queryable {
     {
         self.query_iter(query)?
             .map(|row| row.map(from_row::<T>))
+            .filter(|r| r.is_ok())
             .try_fold(init, |acc, row: Result<T>| row.map(|row| f(acc, row)))
     }
 

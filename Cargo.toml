@@ -21,7 +21,7 @@ mysql = ["lunatic-mysql"]
 redis = ["lunatic-redis"]
 
 [dependencies]
-lunatic-mysql = {version = "0.1.1", optional = true}
+lunatic-mysql = {version = "0.1.1", optional = true, path = "./lunatic-mysql" }
 lunatic-redis = {version = "0.1.3", optional = true}
 
 [workspace]

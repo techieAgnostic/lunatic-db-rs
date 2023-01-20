@@ -789,7 +789,7 @@ dependencies = [
  "fnv",
  "lunatic",
  "lunatic-db",
- "lunatic-mysql 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "lunatic-mysql",
  "lunatic-redis 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "partial-io",
  "quickcheck",
@@ -831,28 +831,6 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "time",
- "twox-hash",
- "url",
-]
-
-[[package]]
-name = "lunatic-mysql"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "918faafd925a3079f3bc279b570e30a896115969fcd96a4707cee9fff04cda13"
-dependencies = [
- "bufstream",
- "bytes",
- "crossbeam",
- "flate2",
- "io-enum",
- "lru",
- "lunatic",
- "mysql_common",
- "once_cell",
- "percent-encoding",
- "serde",
- "serde_json",
  "twox-hash",
  "url",
 ]
